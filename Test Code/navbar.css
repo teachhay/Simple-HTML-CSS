@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  height: 130vh;
+  background-color: antiquewhite;
+}
+
+.navbar {
+  display: flex;
+  height: 50px;
+}
+
+.block {
+  display: flex;
+  background-color: whitesmoke;
+  float: left;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+.brand {
+  width: 150px;
+}
+
+.brand .test {
+  position: relative;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: lightsalmon;
+  width: 150px;
+}
+
+.test {
+  position: relative;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: lightblue;
+  width: 10%;
+  height: 50px;
+}
+
+.test:nth-child(even) {
+  background-color: lightcyan;
+}
+
+.page {
+  width: 100%;
+  border-left: 1px solid black;
+}
+
+.icon {
+  width: 20%;
+  border-left: 1px solid black;
+}
+
+.icon img {
+  width: 36px;
+  height: 36px;
+  margin: 20px;
+}
+
+label #sign-one,
+label #sign-two {
+  float: left;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 5px;
+  margin-left: 180px;
+  line-height: 50px;
+  margin-right: 0px;
+  cursor: pointer;
+  display: none;
+}
+
+#res-menu {
+  display: none;
+}
+
+@media screen and (min-width: 600px) and (max-width: 850px) {
+  .icon {
+    display: none;
+  }
+  .brand .test {
+    width: 150px;
+  }
+  .test {
+    width: 18%;
+  }
+}
+
+@media screen and (min-width: 850px) and (max-width: 2000px) {
+  .brand .test {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  label #sign-one {
+    display: block;
+  }
+  .page {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: black;
+    top: 50px;
+    left: 100%;
+    transition: 0.5s;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .page .test {
+    display: flex;
+    width: 100%;
+    height: 25%;
+    background-color: white;
+    color: black;
+    font-size: 30px;
+  }
+  .page .test:hover {
+    background-color: lightgray;
+    color: black;
+  }
+  #res-menu:checked ~ .page {
+    left: 0;
+  }
+  #res-menu:checked ~ label #sign-one {
+    display: none;
+  }
+  #res-menu:checked ~ label #sign-two {
+    display: block;
+  }
+  .test {
+    display: none;
+  }
+  .brand .test {
+    width: 150px;
+  }
+  .icon {
+    display: none;
+  }
+}

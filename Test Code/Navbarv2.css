@@ -1,0 +1,481 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  display: flex;
+  height: 50px;
+  border-bottom: 1px solid black;
+}
+
+.page a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+.block {
+  display: flex;
+  background-color: whitesmoke;
+  float: left;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+.brand {
+  width: 150px;
+}
+
+.brand label {
+  font-family: "Yellowtail";
+  font-size: 28px;
+}
+
+.brand .test {
+  position: relative;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+}
+
+.test {
+  position: relative;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.page {
+  width: 100%;
+}
+
+.page .test:nth-child(4) {
+}
+
+.page .test img {
+  position: absolute;
+  float: right;
+  left: 100px;
+}
+
+.page img {
+  width: 36px;
+  height: 36px;
+  margin: 20px;
+}
+
+label #sign-one,
+label #sign-two {
+  float: left;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 5px;
+  margin-left: 180px;
+  line-height: 50px;
+  margin-right: 0px;
+  cursor: pointer;
+  display: none;
+}
+
+#res-menu {
+  display: none;
+}
+
+.brand .test:hover {
+  background-image: linear-gradient(45deg, #f3ec78, #af4261);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.page .test:hover {
+  background-image: linear-gradient(45deg, #f3ec78, #af4261);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  transform: scale(1.3);
+  transition: all 0.4s ease-in-out;
+}
+
+.page img:hover {
+  transition: all 0.4s ease-in-out;
+  transform: scale(1.3);
+}
+
+/* #region Style Templete */
+.row {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.header {
+  padding: 30px 0 30px 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.images {
+  float: right;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.left {
+  height: 100%;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right {
+  height: 100%;
+  background-color: lightcoral;
+}
+
+.maintext {
+  text-align: justify;
+}
+
+.subtext {
+  text-align: normal;
+  font-size: 15px;
+}
+
+.btn {
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  background-color: #ff5bb0;
+  border: 1px solid #ee1eb5;
+  box-shadow: inset 0px 1px 0px 0px #fbafe3;
+  background: linear-gradient(to bottom, #ff5bb0 5%, #ef027d 100%);
+  text-shadow: 0px 1px 0px #c70067;
+  animation: gradient 1s ease infinite;
+}
+
+.btn:hover {
+  background: linear-gradient(to bottom, #ef027d 5%, #ff5bb0 100%);
+  background-color: #ef027d;
+}
+
+.btn:active {
+  position: relative;
+  top: 1px;
+}
+
+.btn:focus {
+  outline: none;
+}
+/* #endregion */
+
+/*#region Responsive Code*/
+/* #region Mobile Size */
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  /* label #sign-one {
+    display: block;
+  }
+  nav ul {
+    overflow-y: scroll;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: white;
+    top: 50px;
+    left: -100%;
+    text-align: center;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+  nav ul li {
+    display: block;
+    margin: 40px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 25px;
+  }
+  #res-menu:checked ~ ul {
+    left: 0;
+  }
+  #res-menu:checked ~ label #sign-one {
+    display: none;
+  }
+  #res-menu:checked ~ label #sign-two {
+    display: block;
+  }
+  nav ul li a .fa {
+    display: none;
+  } */
+
+  label #sign-one {
+    display: block;
+  }
+  .page {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: black;
+    top: 50px;
+    left: 100%;
+    transition: 0.5s;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 10;
+  }
+  .page .test {
+    display: flex;
+    width: 100%;
+    height: 25%;
+    background-color: white;
+    color: black;
+    font-size: 30px;
+  }
+  .page .test:hover {
+    background-color: lightgray;
+    color: black;
+  }
+  #res-menu:checked ~ .page {
+    left: 0;
+  }
+  #res-menu:checked ~ label #sign-one {
+    display: none;
+  }
+  #res-menu:checked ~ label #sign-two {
+    display: block;
+  }
+  .test {
+    display: none;
+  }
+  .brand .test {
+    width: 150px;
+  }
+  .icon {
+    display: none;
+  }
+  .column {
+    flex-basis: 100%;
+  }
+  .row .column:nth-child(1) {
+    order: 2;
+  }
+  .row .column:nth-child(2) {
+    order: 1;
+  }
+  .left {
+    padding: 40px;
+  }
+  #article .column:nth-child(2) {
+    order: 1;
+    flex-basis: 100%;
+  }
+  #article2 .column:nth-child(1) {
+    order: 1;
+    flex-basis: 100%;
+  }
+  .flexcolumn {
+    width: 90%;
+  }
+  .feature .flexcolumn:nth-child(1) {
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
+  .feature .flexcolumn:nth-child(2) {
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
+  .feature .flexcolumn:nth-child(3) {
+    border-bottom: 1px solid black;
+  }
+  .feature .flexcolumn:nth-child(4) {
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
+  .feature .flexcolumn:nth-child(5) {
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
+  .feature .flexcolumn:nth-child(6) {
+    border-bottom: 1px solid black;
+  }
+  .form .flexrow {
+    width: 90%;
+    padding: 0px;
+  }
+  .form .contact {
+    width: 100%;
+  }
+  .contact input {
+    width: 99%;
+  }
+  .type input {
+    margin: 0px 5px 0px 5px;
+  }
+  .topic select {
+    width: 99%;
+  }
+
+  .message textarea {
+    width: 99%;
+  }
+  .submit button {
+    width: 100px;
+  }
+  .imagecolumn {
+    width: 100%;
+  }
+  .imagecolumn:nth-child(2),
+  .imagecolumn:nth-child(3) {
+    display: none;
+  }
+  .btn-left {
+    left: 0px;
+  }
+  .btn-right {
+    right: 0px;
+  }
+  .caption {
+    width: 100%;
+  }
+}
+/* #endregion */
+
+/* #region Tablet Size */
+@media screen and (min-width: 600px) and (max-width: 850px) {
+  /* nav h1 {
+    margin: 3px 0;
+  }
+  nav ul li {
+    margin: 10px 0;
+    line-height: 30px;
+  }
+  #hide {
+    display: none;
+  } */
+
+  .page img {
+    display: none;
+  }
+  .brand .test {
+    width: 150px;
+  }
+  .test {
+    width: 20%;
+  }
+
+  .left {
+    padding: 50px;
+  }
+  .gallery {
+    height: 25vh;
+  }
+  #article .column:nth-child(2) {
+    flex: 0 0 50%;
+  }
+  #article2 .column:nth-child(1) {
+    flex: 0 0 50%;
+  }
+  .feature p {
+    font-size: 15px;
+  }
+  .feature .flexcolumn:nth-child(1) {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+
+  .feature .flexcolumn:nth-child(2) {
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
+
+  .feature .flexcolumn:nth-child(3) {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+
+  .feature .flexcolumn:nth-child(4) {
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
+
+  .feature .flexcolumn:nth-child(5) {
+    border-right: 1px solid black;
+  }
+
+  .feature .flexcolumn:nth-child(6) {
+    border-right: none;
+  }
+  .flexcolumn {
+    width: 45%;
+  }
+  .imagecolumn {
+    width: 50%;
+  }
+  .imagecolumn:nth-child(3) {
+    display: none;
+  }
+  .btn-left {
+    left: 0px;
+  }
+  .btn-right {
+    right: 0px;
+  }
+  .caption {
+    width: 50%;
+  }
+}
+/* #endregion */
+
+/* #region Desktop Size */
+@media screen and (min-width: 850px) {
+  /* nav ul li {
+    margin: 5px 0;
+    line-height: 30px;
+  }
+  #hide {
+    margin: 10px;
+  } */
+  .left {
+    padding: 40px;
+  }
+  .brand .test {
+    width: 200px;
+  }
+}
+/* #endregion */
+/*#endregion*/

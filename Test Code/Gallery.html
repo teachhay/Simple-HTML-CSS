@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="gallery.css" />
+  </head>
+
+  <body>
+    <h2 class="w3-center">Manual Slideshow</h2>
+
+    <div class="container">
+      <button class="btn-left btn" onclick="plusDivs(-1)">
+        &#10094;
+      </button>
+      <div class="flexcolumn">
+        <div class="left" id="outterleft">
+          <div class="caption">
+            <p>Picture</p>
+            <p>This is a picture</p>
+            <button>More</button>
+          </div>
+        </div>
+      </div>
+      <div class="flexcolumn">
+        <div class="mid">
+          <div class="caption">
+            <p>Picture 2</p>
+            <p>This is a picture</p>
+            <button>More</button>
+          </div>
+          <img class="mySlides" src="../images/pic1.jpg" alt="pic" />
+          <img class="mySlides" src="../images/pic2.jpg" alt="pic" />
+          <img class="mySlides" src="../images/pic3.jpg" alt="pic" />
+        </div>
+      </div>
+      <div class="flexcolumn">
+        <div class="right" id="outterright">
+          <div class="caption">
+            <p>Picture 3</p>
+            <p>This is a picture</p>
+            <button>More</button>
+          </div>
+        </div>
+      </div>
+      <button class="btn-right btn" onclick="plusDivs(1)">
+        &#10095;
+      </button>
+    </div>
+
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs((slideIndex += n));
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+
+        x[slideIndex - 1].style.display = "block";
+
+        console.log("Top : " + x[slideIndex - 1].src);
+        console.log("Test : " + x[slideIndex - 1].src);
+
+        prev(x[slideIndex - 1].src);
+        next(x[slideIndex - 1].src);
+      }
+
+      function prev(n) {
+        console.log("Left : " + n);
+
+        if (n == "http://127.0.0.1:5500/Exam/HTML/images/pic1.jpg") {
+          document.getElementById("outterleft").style.backgroundImage =
+            "url('../images/pic3.jpg')";
+        }
+        if (n == "http://127.0.0.1:5500/Exam/HTML/images/pic2.jpg") {
+          document.getElementById("outterleft").style.backgroundImage =
+            "url('../images/pic1.jpg')";
+        }
+        if (n == "http://127.0.0.1:5500/Exam/HTML/images/pic3.jpg") {
+          document.getElementById("outterleft").style.backgroundImage =
+            "url('../images/pic2.jpg')";
+        }
+      }
+      function next(n) {
+        console.log("Right : " + n);
+
+        if (n == "http://127.0.0.1:5500/Exam/HTML/images/pic1.jpg") {
+          document.getElementById("outterright").style.backgroundImage =
+            "url('../images/pic2.jpg')";
+        }
+        if (n == "http://127.0.0.1:5500/Exam/HTML/images/pic2.jpg") {
+          document.getElementById("outterright").style.backgroundImage =
+            "url('../images/pic3.jpg')";
+        }
+        if (n == "http://127.0.0.1:5500/Exam/HTML/images/pic3.jpg") {
+          document.getElementById("outterright").style.backgroundImage =
+            "url('../images/pic1.jpg')";
+        }
+      }
+    </script>
+  </body>
+</html>

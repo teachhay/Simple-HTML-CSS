@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Exam</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Pacifico&family=Merienda+One&family=Yellowtail&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- old nav bar -->
+  <!-- <nav>
+    <input type="checkbox" id="res-menu" />
+    <label for="res-menu">
+      <img src="images/face-48.png" id="sign-one">
+      <img src="images/face-48.png" id="sign-two">
+    </label>
+    <a href="#" class="brand">Tour-Guide</a>
+    <ul>
+      <li><a href="#article">Stories</a></li>
+      <li><a href="#gallery-area">Gallery</a></li>
+      <li><a href="#features-area">Features</a></li>
+      <li><a href="#contact-area">Write to us</a></li>
+      <li>
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook" id="hide"></i></a>
+      </li>
+      <li>
+        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter" id="hide"></i></a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram" id="hide"></i></a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube" id="hide"></i></a>
+      </li>
+    </ul>
+  </nav> -->
+
+  <navbar class="navbar">
+    <div class="block brand">
+      <div class="test"><label>Tour-Guide</label></div>
+    </div>
+    <input type="checkbox" id="res-menu" />
+    <label for="res-menu">
+      <img src="images/hamburger-menu.png" id="sign-one" />
+      <img src="images/cross.png" id="sign-two" />
+    </label>
+    <div class="block page">
+      <div class="test"><a href="#article">Stories</a></div>
+      <div class="test"><a href="#gallery-area">Gallery</a></div>
+      <div class="test"><a href="#features-area">Features</a></div>
+      <div class="test"><a href="#contact-area">Write to us</a></div>
+    </div>
+    <div class="icon block">
+      <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-128.png" /></a>
+      <a href="https://www.twitter.com" target="_blank"><img src="images/twitter-128.png" /></a>
+      <a href="https://www.instragram.com" target="_blank"><img src="images/instagram-2-128.png" /></a>
+      <a href="https://www.youtube.com" target="_blank"><img src="images/youtube-128.png" /></a>
+      <a href="https://www.gmail.com" target="_blank"><img src="images/gmail-128.png" /></a>
+    </div>
+  </navbar>
+
+  <div class="row greeting">
+    <div class="column">
+      <div class="left">
+        <div class="innerbox">
+          <h2 class="title">Let's hit the road</h2>
+          <br />
+          <p class="maintext">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s.
+          </p>
+          <br />
+          <p class="subtext">
+            It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged.
+          </p>
+          <br />
+          <button class="btn">Start</button>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="right">
+        <img class="images" src="images/land1.jpeg" />
+      </div>
+    </div>
+  </div>
+
+  <div class="row" id="article">
+    <div class="column" id="article-left">
+      <div class="left">
+        <div class="innerbox">
+          <h2 class="title">Story</h2>
+          <br />
+          <p class="maintext">
+            It is a long established fact that a reader will be distracted by the readable content of a page when
+            looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+            letters, as opposed to using 'Content here, content here', making it look like readable English. Many
+            desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
+            search for 'lorem ipsum' will uncover many web sites still in their infancy.
+          </p>
+          <br />
+          <button class="btn">More</button>
+        </div>
+      </div>
+    </div>
+    <div class="column article-rigth">
+      <div class="right">
+        <img class="images" src="images/land2.jpg" />
+      </div>
+    </div>
+  </div>
+
+  <div class="row" id="article2">
+    <div class="column" id="article-left">
+      <div class="right">
+        <img class="images" src="images/land3.jpg" />
+      </div>
+    </div>
+    <div class="column" id="article-right">
+      <div class="left">
+        <div class="innerbox">
+          <h2 class="title">Story</h2>
+          <br />
+          <p class="maintext">
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+            Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+            Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem
+            Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable
+            source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
+            of Good and Evil) by Cicero, written in 45 BC.
+          </p>
+          <br />
+          <button class="btn">More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row header" id="gallery-area">
+    <h2>Gallery</h2>
+  </div>
+
+  <div class="row" id="gallery">
+    <button class="btn-left button" onclick="plusDivs(-1)">
+      &#10094;
+    </button>
+    <div class="imagecolumn">
+      <div class="innerleft" id="outterleft">
+        <div class="caption">
+          <p>Picture</p>
+          <p>This is a picture</p>
+          <button>More</button>
+        </div>
+      </div>
+    </div>
+    <div class="imagecolumn">
+      <div class="innermid">
+        <div class="caption">
+          <p>Picture</p>
+          <p>This is a picture</p>
+          <button>More</button>
+        </div>
+        <img class="mySlides" src="images/land4.jpg" alt="pic" />
+        <img class="mySlides" src="images/land5.jpg" alt="pic" />
+        <img class="mySlides" src="images/land6.jpg" alt="pic" />
+      </div>
+    </div>
+    <div class="imagecolumn">
+      <div class="innerright" id="outterright">
+        <div class="caption">
+          <p>Picture</p>
+          <p>This is a picture</p>
+          <button>More</button>
+        </div>
+      </div>
+    </div>
+    <button class="btn-right button" onclick="plusDivs(1)">
+      &#10095;
+    </button>
+  </div>
+
+  <div class="row header" id="features-area">
+    <h2>Feature</h2>
+  </div>
+
+  <div class="row feature">
+    <div class="flexcolumn">
+      <div class="inside-container">
+        <img src="images/airplane-48.png" />
+        <br>
+        <h3>One</h3>
+        <br>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+          some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+      </div>
+    </div>
+    <div class="flexcolumn">
+      <div class="inside-container">
+        <img src="images/map_marker-48.png" />
+        <br>
+        <h3>Two</h3>
+        <br>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+          some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+      </div>
+    </div>
+    <div class="flexcolumn">
+      <div class="inside-container">
+        <img src="images/movie-48.png" />
+        <br>
+        <h3>Three</h3>
+        <br>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+          some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+      </div>
+    </div>
+    <div class="flexcolumn">
+      <div class="inside-container">
+        <img src="images/alarm_clock-48.png" />
+        <br>
+        <h3>Four</h3>
+        <br>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+          some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+      </div>
+    </div>
+    <div class="flexcolumn">
+      <div class="inside-container">
+        <img src="images/face-48.png" />
+        <br>
+        <h3>Five</h3>
+        <br>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+          some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+      </div>
+    </div>
+    <div class="flexcolumn">
+      <div class="inside-container">
+        <img src="images/genius-48.png" />
+        <br>
+        <h3>Six</h3>
+        <br>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+          some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row header" id="contact-area">
+    <h2>Writw to us</h2>
+  </div>
+
+  <div class="form">
+    <div class="flexrow">
+      <div class="contact">
+        <div class="label"><label>Name</label></div>
+        <input type="text" placeholder="Enter name">
+      </div>
+      <div class="contact">
+        <div class="label"><label>Email</label></div>
+        <input type="text" placeholder="Enter email">
+      </div>
+      <div class="contact">
+        <div class="label"><label>Phone</label></div>
+        <input type="text" placeholder="Enter phone number">
+      </div>
+    </div>
+
+    <div class="flexrow">
+      <div class="type">
+        <label>Contact me: </label>
+        <input type="radio" class="contactby" name="contactby"><label>Email</label>
+        <input type="radio" class="contactby" name="contactby"><label>Phone</label>
+        <input type="radio" class="contactby" name="contactby"><label>Telegram</label>
+      </div>
+    </div>
+
+    <div class="flexrow">
+      <div class="topic">
+        <div class="label"><label>Topics</label></div>
+        <select>
+          <option>Post my story</option>
+          <option>Feedback</option>
+          <option>Business inquery</option>
+          <option>Other</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="flexrow">
+      <div class="message">
+        <div class="label"><label>Message</label></div>
+        <textarea></textarea>
+      </div>
+    </div>
+
+    <div class="flexrow">
+      <div class="submit">
+        <input type="checkbox"><label>I am a human</label>
+        <button>Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="blank"></div>
+
+  <div class="footer">
+    <div class="row">
+      <a href="https://www.twitter.com" target="_blank">
+        <img src="images/twitter-128.png" />
+      </a>
+      <a href="https://www.facebook.com" target="_blank">
+        <img src="images/facebook-128.png" />
+      </a>
+      <a href="https://www.instagram.com" target="_blank">
+        <img src="images/instagram-2-128.png" />
+      </a>
+      <a href="https://www.youtube.com" target="_blank">
+        <img src="images/youtube-128.png" />
+      </a>
+      <a href="https://www.gmail.com" target="_blank">
+        <img src="images/gmail-128.png" />
+      </a>
+    </div>
+    <div class="row">
+      <p>
+      <div class="copyright">&copy;</div> Tour-Guide 2020</p>
+    </div>
+  </div>
+
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs((slideIndex += n));
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+
+      if (n > x.length) {
+        slideIndex = 1;
+      }
+
+      if (n < 1) {
+        slideIndex = x.length;
+      }
+
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+
+      x[slideIndex - 1].style.display = "block";
+
+      console.log("Top : " + x[slideIndex - 1].src);
+
+      prev(x[slideIndex - 1].src);
+      next(x[slideIndex - 1].src);
+    }
+
+    function prev(n) {
+      console.log("Left : " + n);
+      var x = document.getElementById("outterleft");
+
+      var check = n.includes("land4.jpg");
+      var check1 = n.includes("land5.jpg");
+      var check2 = n.includes("land6.jpg");
+
+      if (check == true) {
+        x.style.backgroundImage = "url('images/land6.jpg')";
+      }
+      if (check1 ==true) {
+        x.style.backgroundImage = "url('images/land4.jpg')";
+      }
+      if (check2 == true) {
+        x.style.backgroundImage = "url('images/land5.jpg')";
+      }
+    }
+    function next(n) {
+      console.log("Right : " + n);
+      var x = document.getElementById("outterright");
+
+      var check = n.includes("land4.jpg");
+      var check1 = n.includes("land5.jpg");
+      var check2 = n.includes("land6.jpg");
+
+      // if (n == "http://127.0.0.1:5500/Exam/HTML/images/land4.jpg") {
+      //   x.style.backgroundImage ="url('images/land5.jpg')";
+      // }
+      // if (n == "http://127.0.0.1:5500/Exam/HTML/images/land5.jpg") {
+      //   x.style.backgroundImage ="url('images/land6.jpg')";
+      // }
+      // if (n == "http://127.0.0.1:5500/Exam/HTML/images/land6.jpg") {
+      //   x.style.backgroundImage ="url('images/land4.jpg')";
+      // }
+
+      if(check == true){
+        x.style.backgroundImage ="url('images/land5.jpg')";
+      }
+      if (check1 ==true){
+        x.style.backgroundImage ="url('images/land6.jpg')";
+      }
+      if (check2 == true) {
+        x.style.backgroundImage ="url('images/land4.jpg')";
+      }
+    }
+  </script>
+</body>
+
+</html>
