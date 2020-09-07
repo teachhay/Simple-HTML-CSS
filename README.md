@@ -36,10 +36,10 @@
     * copyright.
 
   Notice the following:
-    - the image in greeting occupies half of the screen width;
-    - the image in articles occupies a third of the screen width;
-    - at that, the images in the greeting and articles must stretch to the full height of the block (the image can be cut in width);
-    - the gallery displays only the images that fit in the page width, that is, a narrower screen must display fewer photos;
-    - when hovering over an image in the gallery, the following must appear: arrows on the sides of the gallery and the text on a translucent bar above the image;
-    - benefits are separated by lines;
-    - links to social network profiles in the footer must become darker when hovered.
+  - the image in greeting occupies half of the screen width;
+  - the image in articles occupies a third of the screen width;
+  - at that, the images in the greeting and articles must stretch to the full height of the block (the image can be cut in width);
+  - the gallery displays only the images that fit in the page width, that is, a narrower screen must display fewer photos;
+  - when hovering over an image in the gallery, the following must appear: arrows on the sides of the gallery and the text on a translucent bar above the image;
+  - benefits are separated by lines;
+  - links to social network profiles in the footer must become darker when hovered.
