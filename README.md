@@ -16,13 +16,13 @@
     * text
     * button
     * image
-  - Gllery
+  - Gallery
     * several images
-  - Lst of benefits
+  - List of benefits
     * icon
     * name
     * description
-  - Frm for sending a letter:
+  - Form for sending a letter:
     * name
     * email address
     * phone number
@@ -31,7 +31,7 @@
     * message
     * I'm not a robot reCAPTCHA (the user must check the checkbox, this prevents spam)
     * Send button
-  - Foter
+  - Footer
     * links to social network profiles
     * copyright
 
